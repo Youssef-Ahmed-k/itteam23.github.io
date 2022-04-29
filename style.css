@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px ;
+    
+
+}
+
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28.8px;
+
+}
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 17.6px;
+    font-weight: 550;
+    padding-left: 30px;
+
+
+}
+.navigation a:hover{
+    color: #4009c2;
+}
+
+
+section{
+    padding: 100px 100px;
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("images/the-weeknd-01.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color:#4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+
+}
+.main h3{
+color: white;
+font-size: 2em;
+font-weight: 700;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+.main-button{
+    color: white;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 650;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 150px;
+    margin-bottom: 40px;
+    transition: 0.8s ease;
+}
+.main-button:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 20px rgba(1, 1, 1, 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.8s ease;
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #0a49f6;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.news{
+    background-color: #000016;
+
+}
+.news.content{
+    margin-top: 30px;
+}
+.news-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.8s ease;
+}
+.news-card:hover{
+    transform: scale(1.1);
+}
+.project-img img{
+    width: 100%;
+
+}
+.project-info{
+    padding:1em;
+}
+.project-p{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+.a-bu{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 15px;
+    justify-content: center;
+    transition: 0.8s ease;
+    color: #3a6cf4;
+}
+.a-bu:hover{
+    color: #601cfc;
+    transform: scale(1.1);
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+}
+.footer span{
+    display: inline-block;
+    color: #3a6cf4;
+}
+
+/*here we start the list*/
+
+
+.about{
+    color:#3a6cf4 ;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    background-color: white;
+}
+.choice{
+    display: flex;
+    flex-wrap: wrap;;
+    background-color:#000016 ;
+    justify-content: center;
+    flex-direction: row;
+}
+.choice img{
+    border: solid 2px white;
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.8s ease;
+
+}
+.choice img:hover{
+    transform: scale(1.1);
+}
+.choice p{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 28px;
+}
+
+
+
+/*-here we start will smith*/
+
+.intro{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("images/211030-will-smith-al-1042\ \(1\).jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.intro h2 p{
+    font-size: 2em;
+    font-weight: 600;
+}
+.hiswork{
+    background-color: #D3D3D3;
+}
+.hiswork h2{
+    text-align: center;
+}
+.actor-work{
+    background-color: white;
+    border: 1px solid white;
+    height: 30em;
+    width: 70em;
+    overflow: visible;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+.actor-work img{
+    width:28%;
+    height: 100%;
+    display: flex;
+    float: left;
+
+}
+.actor-work p{
+    color: #000;
+    display: inline-block;
+    font-size: 2em;
+    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.actor-work p span{
+    display: inline-block;
+    font-weight: 800;
+}
+.watch{
+    color: white;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 650;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 150px;
+    margin-bottom: 40px;
+    transition: 0.8s ease;
+    margin: 100px;
+}
+.watch:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
