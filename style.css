@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
 
 header{
@@ -15,7 +14,6 @@ header{
     align-items: center;
     padding: 10px 100px ;
 }
-
 .logo{
     text-decoration: none;
     color: #3a6cf4;
@@ -30,17 +28,13 @@ header{
     font-size: 20px;
     font-weight: 550;
     padding-left: 30px;
-
-
 }
 .navigation a:hover{
     color: #4009c2;
 }
 
-
 section{
     padding: 100px 100px;
-
 }
 .main{
     width: 100%;
@@ -63,7 +57,6 @@ section{
     color:#4e9eff;
     font-size: 3em;
     font-weight: 600;
-
 }
 .main h3{
 color: white;
@@ -277,8 +270,9 @@ margin-bottom: 30px;
     flex-wrap: wrap;
 
 }
-
-
+.abouthim{
+    
+}
 .actor-work p span{
     display: inline-block;
     font-weight: 800;
