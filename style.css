@@ -254,20 +254,11 @@ margin-bottom: 30px;
     margin: 20px;
     
 }
-.singer-work{
-    background-color: rgb(0, 0, 0);
-    border: 1px solid white;
-    overflow: visible;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-}
 .actor-work img{
     width:28%;
     height: 100%;
     display: flex;
     float: left;
-
 }
 .actor-work p{
     color: #000;
@@ -299,4 +290,17 @@ margin-bottom: 30px;
 .watch:hover{
     background-color: #0a49f6;
     transform: scale(1.1);
+}
+.singer-work{
+    background-color: rgb(0, 0, 0);
+    overflow: visible;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.singer-work img{
+    width:25%;
+    height: 100%;
+    display: flex;
+    float: right;
 }
