@@ -13,12 +13,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px ;
+    z-index: 100;
 }
 .logo{
     text-decoration: none;
     color: #3a6cf4;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 30px;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -65,24 +66,6 @@ font-weight: 700;
 margin-top: 10px;
 margin-bottom: 30px;
 }
-.main-button{
-    color: white;
-    background-color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 650;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 150px;
-    margin-bottom: 40px;
-    transition: 0.8s ease;
-}
-.main-button:hover{
-    background-color: #0a49f6;
-    transform: scale(1.1);
-    
-}
 .title{
     display: flex;
     justify-content: center;
@@ -115,10 +98,12 @@ margin-bottom: 30px;
     font-size: 8em;
     text-align: center;
 }
-.info{
+
+.card-info{
     text-align: center;
+    position: relative;
 }
-.info h3{
+.card-info h3{
     color: #0a49f6;
     font-size: 1.2em;
     font-weight: 700;
@@ -157,9 +142,10 @@ margin-bottom: 30px;
     padding: 2em;
     display: flex;
 }
-.footer span{
+.footer a{
     display: inline-block;
     color: #3a6cf4;
+    text-decoration: none;
 }
 
 .about{
@@ -202,65 +188,72 @@ margin-bottom: 30px;
     text-decoration: none;
     text-align: center;
 }
-.choice a:hover{
-    color: rgb(142, 142, 142);
-    font-size: 35px;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-}
 
-.intro{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("images/211030-will-smith-al-1042-780x470") no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position:center;
-}
-.intro h2 p{
-    font-size: 2em;
-    font-weight: 600;
-}
 .hiswork{
     background-color: #D3D3D3;
 }
 .hiswork h2{
     text-align: center;
+    color: #3a6cf4;
 }
-
-.actor-work{
+.actor-work {
     background-color: white;
     border: 1px solid white;
     height: 30em;
-    width: 70em;
     overflow: visible;
     border-radius: 10px;
     margin: 20px;
-    
 }
-.actor-work img{
-    width:28%;
+.info {
+    width: 50%;
     height: 100%;
+    float: left;
+    position: relative;
+}
+.info img{
+    width:50%;
+    height: 100%;
+    border-radius: 10px;
     display: flex;
     float: left;
 }
-.actor-work p{
+.info h1{
+    color: #3a6cf4;
+    display: inline-block;
+    font-size: 2em;
+    padding-left: 100px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.info h2{
     color: #000;
     display: inline-block;
     font-size: 2em;
-    padding-left: 5px;
+    padding-left: 100px;
     display: flex;
     flex-wrap: wrap;
-
-}
-.actor-work p span{
-    display: inline-block;
     font-weight: 800;
 }
-.watch{
+.info span{
+    color: #000;
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 800;
+}
+.info p{
+    color: #000;
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info a{
     color: white;
     background-color: #3a6cf4;
     text-decoration: none;
@@ -270,13 +263,34 @@ margin-bottom: 30px;
     padding: 0.9375em 2.1875em;
     letter-spacing: 1px;
     border-radius: 150px;
-    margin-bottom: 40px;
     transition: 0.8s ease;
-    margin: 100px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    margin-left: 55px;
 }
-.watch:hover{
+.info a:hover{
     background-color: #0a49f6;
     transform: scale(1.1);
+}
+.trailer {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.trailer h2 {
+    color: #000;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+}
+.trailer video {
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 10px;
+    border-radius: 30px;
 }
 
 .singer-work{
@@ -299,6 +313,11 @@ margin-bottom: 30px;
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+}
+.footnote{
+    display: inline-block;
+    color: #3a6cf4;
+    text-decoration: none;
 }
 
 /* Athlete Table Styling */
@@ -354,4 +373,102 @@ margin-bottom: 30px;
     font-weight:bold;
     text-align:center;
     vertical-align:top
+}
+
+    /* Celebs */
+.willsmith{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/211030-will-smith-al-1042-780x470.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.willsmith h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.bradpitt{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/Brad-Pitt.webp") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.bradpitt h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.tomcruise{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/396080_2161295_updates.webp") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    color: white;
+}
+.tomcruise h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.angelinajolie{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/angelina-jolie-attends-quot-first-they-killed-my-father-quot-premiere-in-cambodia.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    color: white;
+}
+.angelinajolie h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.emmawatson{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/2021-10-17T162946Z_505215438_RC2SBQ9XBJDO_RTRMADP_3_CLIMATE-CHANGE-BRITAIN-EARTHSHOT.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    color: white;
+}
+.emmawatson h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.scarlettjohansson{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/scarlettjohansson.webp") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.scarlettjohansson h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
