@@ -7,18 +7,48 @@
     <title>SCOOP | Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="script" href="script.js">
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">scoop</a>
-        <div class="navigation">
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="index.html#actors">Actors</a>
             <a href="index.html#singers">Singers</a>
             <a href="index.html#athletes">Athletes</a>
             <a href="login.html">Log In</a>
-        </div>
+        </nav>
     </header>
-    
+    <div class="formcontainer">
+        <form class="form">
+            <h1>Log In</h1>
+            <div class="textinput">
+                <p>Username:</p>
+                <input type="text" class="" id="username" placeholder="Username">
+                <br><span id="passfieldcheck" style="color: red; padding-top: 5px; display: none;">This field is required!</span>
+            </div>
+            <div class="textinput">
+                <p>Password:</p>
+                <input type="password" class="" id="password" placeholder="Password">
+                <br><span id="passfieldcheck" style="color: red; padding-top: 5px; display: none;">This field is required!</span>
+            </div>
+            <div class="forgot">
+                <a href="forgotpass">Forgot your password?</a>
+            </div>
+            <label class="rememberme">
+                <input type="checkbox">
+                Remember Me
+            </label>
+            <button onclick="LogInFieldChecks()">Log In</button>
+            <label class="registerprompt">
+                Don’t have an account?
+                <a href="register.html">Create one now</a>
+            </label>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Made by <a href="about.html">FCAI-HU Students</a></p>
+    </footer>
 </body>
 </html>
