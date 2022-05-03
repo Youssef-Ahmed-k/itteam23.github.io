@@ -7,7 +7,6 @@
     <title>SCOOP | Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="script" href="script.js">
 </head>
 <body>
     <header>
@@ -24,23 +23,24 @@
         <form class="form">
             <h1>Log In</h1>
             <div class="textinput">
-                <p>Username:</p>
-                <input type="text" class="" id="username" placeholder="Username">
-                <br><span id="passfieldcheck" style="color: red; padding-top: 5px; display: none;">This field is required!</span>
+                <p>Username:</p><span style="color: red;">*</span>
+                <input type="text" id="username" placeholder="Username" value="">
             </div>
             <div class="textinput">
-                <p>Password:</p>
-                <input type="password" class="" id="password" placeholder="Password">
-                <br><span id="passfieldcheck" style="color: red; padding-top: 5px; display: none;">This field is required!</span>
+                <p>Password:</p><span style="color: red;">*</span>
+                <input type="password" id="password" placeholder="Password" value="">
             </div>
             <div class="forgot">
-                <a href="forgotpass">Forgot your password?</a>
+                <a href="forgotpass.html">Forgot your password?</a>
             </div>
             <label class="rememberme">
                 <input type="checkbox">
                 Remember Me
             </label>
-            <button onclick="LogInFieldChecks()">Log In</button>
+            <div class="fieldcheck">
+                <span id="check" style="color: red; display: none; padding-bottom: 10px; padding-left: 5px;">Required Fields Empty!</span>
+            </div>
+            <button type="button" onclick="check()">Log In</button>
             <label class="registerprompt">
                 Don’t have an account?
                 <a href="register.html">Create one now</a>
@@ -50,5 +50,30 @@
     <footer class="footer">
         <p>Made by <a href="about.html">FCAI-HU Students</a></p>
     </footer>
+    <script>
+        function userCheck() {
+            var check = false;
+            if(document.getElementById('username').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function passCheck() {
+            var check = false;
+            if(document.getElementById('password').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function check() {
+            var check = userCheck() || passCheck();
+            if(check == true){
+                document.getElementById('check').style.display = "block";
+            }
+            else document.getElementById('check').style.display = "none";
+        }
+    </script>
 </body>
 </html>
