@@ -480,6 +480,13 @@ section{
     vertical-align:top
 }
 
+.thumbcard {
+    background-color: #D3D3D3;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
     /* Celeb Thumbnails*/
 .willsmith{
     width: 100%;
