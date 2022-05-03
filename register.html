@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCOOP | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">scoop</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#actors">Actors</a>
+            <a href="index.html#singers">Singers</a>
+            <a href="index.html#athletes">Athletes</a>
+            <a href="login.html">Log In</a>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="form">
+            <h1>Register</h1>
+            <div>
+                <div class="lefttextinput">
+                    <p>First Name:</p><span style="color: red;">*</span>
+                    <input type="text" id="fname" placeholder="First Name" value="">
+                </div>
+                <div class="righttextinput">
+                    <p>Last Name:</p><span style="color: red;">*</span>
+                    <input type="text" id="lname" placeholder="Last Name" value="">
+                </div>
+            </div>
+            <div class="textinput">
+                <p>Email:</p><span style="color: red;">*</span>
+                <input type="email" id="email" placeholder="Email" value="">
+            </div>
+            <div>
+                <div class="lefttextinput">
+                    <p>Username:</p><span style="color: red;">*</span>
+                    <input type="text" id="username" placeholder="Username" value="">
+                </div>
+                <div class="righttextinput">
+                    <p>Password:</p><span style="color: red;">*</span>
+                    <input type="password" id="password" placeholder="Password" value="">
+                </div>
+            </div>
+            <div class="fieldcheck">
+                <span id="check" style="color: red; display: none; padding-bottom: 10px; padding-left: 5px;">Required Fields Empty!</span>
+            </div>
+            <a href="#" class="btn" onclick="check()">Register</a>
+            <label class="prompt">
+                Already have an account?
+                <a href="login.html">Log in now</a>
+            </label>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Made by <a href="about.html">FCAI-HU Students</a></p>
+    </footer>
+    <script>
+        function fnameCheck() {
+            var check = false;
+            if(document.getElementById('fname').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function lnameCheck() {
+            var check = false;
+            if(document.getElementById('lname').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function emailCheck() {
+            var check = false;
+            if(document.getElementById('email').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function userCheck() {
+            var check = false;
+            if(document.getElementById('username').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function passCheck() {
+            var check = false;
+            if(document.getElementById('password').value == ""){
+                check = true;
+            }
+            else check = false;
+            return check;
+        }
+        function check() {
+            var check = fnameCheck() || lnameCheck() || emailCheck() || userCheck() || passCheck();
+            if(check == true){
+                document.getElementById('check').style.display = "block";
+            }
+            else document.getElementById('check').style.display = "none";
+        }
+    </script>
+</body>
+</html>
