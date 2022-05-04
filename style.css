@@ -743,4 +743,23 @@ section{
     font-weight: 600;
     text-transform: uppercase;
     color: #3a6cf4;
+
+}
+.CR7{
+     width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/athletes/football/CR7/16466366688435.webp") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    color: #3a6cf4;
+}
+.CR7 h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3a6cf4;
+
 }
