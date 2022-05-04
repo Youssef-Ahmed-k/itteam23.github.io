@@ -761,3 +761,20 @@ section{
     text-transform: uppercase;
     color: #3a6cf4;
 }
+.Messi{
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+    align-items: center;
+    background: url("images/athletes/football/Messi/190663.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    color: #3a6cf4;
+}
+.Messi h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3a6cf4;
+}
